@@ -1,0 +1,36 @@
+<launch>
+
+  <arg name="x" default="0.0"/>
+  <arg name="y" default="0.0"/>
+  <arg name="z" default="1.0"/>
+  <arg name="R" default="0.0"/>
+  <arg name="P" default="0.0"/>
+  <arg name="Y" default="0.0"/>
+
+  <arg name="model" default="$(find leo_description)/urdf/leo.urdf.xacro"/>
+  <arg name="fixed" default="false"/>
+  <arg name="robot_namespace" default="/"/>
+  <arg name="model_name" default="leo"/>
+
+  <group ns="$(arg robot_namespace)">
+    <param name="tf_prefix" value="$(arg robot_namespace)"/>
+
+    <param name="robot_description" command="xacro $(arg model) 
+      fixed:=$(arg fixed)
+      ros_control_namespace:=$(arg robot_namespace)" />
+
+    <rosparam command="load" file="$(find leo_gazebo)/config/pid_gains.yaml"/>
+
+    <node name="urdf_spawner"
+          pkg="gazebo_ros"
+          type="spawn_model"
+          respawn="false"
+          args="-urdf 
+          -x $(arg x) -y $(arg y) -z $(arg z)
+          -R $(arg R) -P $(arg P) -Y $(arg Y)
+          -model $(arg model_name) 
+          -param robot_description
+    "/>
+  </group>
+
+</launch>

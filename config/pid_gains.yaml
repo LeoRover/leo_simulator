@@ -1,0 +1,6 @@
+gazebo_ros_control:
+  pid_gains:
+    wheel_FR_joint: {p: 1.0, i: 3.0, d: 0.0, i_clamp: 20.0}
+    wheel_FL_joint: {p: 1.0, i: 3.0, d: 0.0, i_clamp: 20.0}
+    wheel_RR_joint: {p: 1.0, i: 3.0, d: 0.0, i_clamp: 20.0}
+    wheel_RL_joint: {p: 1.0, i: 3.0, d: 0.0, i_clamp: 20.0}

@@ -1,0 +1,18 @@
+<launch>
+
+  <arg name="robot_namespace" default="/"/>
+
+  <group ns="$(arg robot_namespace)">
+    <rosparam command="load" file="$(find leo_gazebo)/config/controllers.yaml"/>
+    
+    <node name="controller_spawner" 
+          pkg="controller_manager"
+          type="spawner" args="
+      controllers/state
+      controllers/diff_drive
+    "/>
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  </group>
+
+</launch>
