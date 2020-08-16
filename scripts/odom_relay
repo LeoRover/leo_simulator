@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+
+import argparse
+
+import rospy
+from geometry_msgs.msg import TwistStamped
+from nav_msgs.msg import Odometry
+
+def callback(msg):
+    new_msg = TwistStamped()
+    new_msg.header.stamp = msg.header.stamp
+    new_msg.header.frame_id = msg.child_frame_id
+    new_msg.twist = msg.twist.twist
+
+    pub.publish(new_msg)
+
+rospy.init_node("odom_relay")
+
+sub = rospy.Subscriber("controllers/diff_drive/odom", Odometry, callback, tcp_nodelay=True)
+pub = rospy.Publisher("wheel_odom", TwistStamped, queue_size=1)
+
+rospy.spin()
