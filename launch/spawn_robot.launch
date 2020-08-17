@@ -7,6 +7,7 @@
   <arg name="P" default="0.0"/>
   <arg name="Y" default="0.0"/>
 
+  <arg name="fixed" default="false"/>
   <arg name="robot_ns" default="/"/>
   <arg name="model_name" default="leo"/>
 

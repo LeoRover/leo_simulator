@@ -1,5 +1,6 @@
 <launch>
 
+  <arg name="fixed" default="false"/>
   <arg name="robot_ns" default="/"/>
   <arg name="model_name" default="leo"/>
 
@@ -18,6 +19,7 @@
   </include>
 
   <include file="$(find leo_gazebo)/launch/spawn_robot.launch">
+    <arg name="fixed" value="$(arg fixed)"/>
     <arg name="robot_ns" value="$(arg robot_ns)"/>
     <arg name="model_name" value="$(arg model_name)"/>
   </include>
