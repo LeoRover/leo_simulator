@@ -20,4 +20,6 @@
 
   <exec_depend>leo_description</exec_depend>
 
+  <depend>roscpp</depend>
+
 </package>
