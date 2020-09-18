@@ -14,7 +14,10 @@
   <arg name="model_name" default="leo"/>
 
   <group ns="$(arg robot_ns)">
-    <param name="tf_prefix" value="$(arg robot_ns)"/>
+  
+    <param unless="$(eval robot_ns == '/')" 
+           name="tf_prefix"
+           value="$(arg robot_ns)"/>
 
     <param name="robot_description" command="xacro $(arg model) 
       fixed:=$(arg fixed)
