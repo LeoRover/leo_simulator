@@ -21,6 +21,7 @@
 
   <exec_depend>leo_description</exec_depend>
 
+  <depend>gazebo</depend>
   <depend>gazebo_ros</depend>
   <depend>roscpp</depend>
 
