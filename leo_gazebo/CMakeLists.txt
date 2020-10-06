@@ -16,8 +16,6 @@ catkin_package(
   CATKIN_DEPENDS 
     roscpp
     gazebo_ros
-  DEPENDS
-    gazebo
 )
 
 include_directories(${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE_DIRS})
