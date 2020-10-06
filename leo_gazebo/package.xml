@@ -5,10 +5,20 @@
   <description>The leo_gazebo package</description>
 
   <maintainer email="blazej@turtlerover.com">Błażej Sowa</maintainer>
+  <author email="blazej@turtlerover.com">Błażej Sowa</author>
 
   <license>MIT</license>
 
+  <url type="website">http://wiki.ros.org/leo_gazebo</url>
+  <url type="bugtracker">https://github.com/LeoRover/leo_simulator/issues</url>
+  <url type="repository">https://github.com/LeoRover/leo_simulator</url>
+
   <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>gazebo</depend>
+  <depend>gazebo_ros</depend>
+  <depend>roscpp</depend>
+
   <exec_depend>gazebo_ros_control</exec_depend>
   <exec_depend>gazebo_plugins</exec_depend>
   <exec_depend>joint_state_controller</exec_depend>
@@ -20,10 +30,6 @@
   <exec_depend>nav_msgs</exec_depend>
 
   <exec_depend>leo_description</exec_depend>
-
-  <depend>gazebo</depend>
-  <depend>gazebo_ros</depend>
-  <depend>roscpp</depend>
 
   <export>
     <gazebo_ros gazebo_model_path="${prefix}/models"/>
