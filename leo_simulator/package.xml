@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>leo_simulator</name>
+  <version>0.1.1</version>
+  <description>
+    Metapackage of software for simulating Leo Rover
+  </description>
+
+  <maintainer email="blazej@turtlerover.com">Błażej Sowa</maintainer>
+  <author email="blazej@turtlerover.com">Błażej Sowa</author>
+
+  <license>MIT</license>
+
+  <url type="website">http://wiki.ros.org/leo_simulator</url>
+  <url type="bugtracker">https://github.com/LeoRover/leo_simulator/issues</url>
+  <url type="repository">https://github.com/LeoRover/leo_simulator</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>leo_gazebo</exec_depend>
+
+  <export>
+    <metapackage />
+  </export>
+</package>
