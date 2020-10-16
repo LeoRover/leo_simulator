@@ -2,7 +2,9 @@
 <package format="2">
   <name>leo_gazebo</name>
   <version>0.1.2</version>
-  <description>The leo_gazebo package</description>
+  <description>
+    Launch files and other resources for simulating Leo Rover in Gazebo.
+  </description>
 
   <maintainer email="blazej@turtlerover.com">Błażej Sowa</maintainer>
   <author email="blazej@turtlerover.com">Błażej Sowa</author>
