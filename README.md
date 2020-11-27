@@ -4,7 +4,7 @@
 |:---|:---:|:---:|
 | **Released version:** | `0.1.2` | `0.1.2` |
 | **Development branch:** | `master` | `master` |
-| **Build status:** | [![Build Status](http://build.ros.org/job/Mdev__leo_simulator__ubuntu_bionic_amd64/badge/icon)](http://build.ros.org/job/Mdev__leo_simulator__ubuntu_bionic_amd64/) | [![Build Status](http://build.ros.org/job/Ndev__leo_simulator__ubuntu_focal_amd64/badge/icon)](http://build.ros.org/job/Ndev__leo_simulator__ubuntu_focal_amd64/) |
+| **Build status:** | [![Build Status](http://build.ros.org/job/Mdev__leo_simulator__ubuntu_bionic_amd64/badge/icon)](http://build.ros.org/job/Mdev__leo_simulator__ubuntu_bionic_amd64/) | [![Build Status](http://build.ros.org/job/Ndev__leo_simulator__ubuntu_focal_amd64/badge/icon)](http://build.ros.org/job/Ndev__leo_simulator__ubuntu_focal_amd64/) <br> [![Build Status](http://build.ros.org/job/Ndev_db__leo_simulator__debian_buster_amd64/badge/icon)](http://build.ros.org/job/Ndev_db__leo_simulator__debian_buster_amd64/) |
 
 Simulator ROS packages for Leo Rover.
 
