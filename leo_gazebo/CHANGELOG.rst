@@ -2,6 +2,11 @@
 Changelog for package leo_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Use gazebo_dev dependency instead of gazebo (fix building on debian)
+* Update package description
+
 0.1.2 (2020-10-06)
 ------------------
 
