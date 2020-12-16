@@ -12,7 +12,7 @@ find_package(gazebo REQUIRED)
 
 catkin_package(
   LIBRARIES
-    gazebo_differential_plugin
+    leo_gazebo_differential_plugin
   CATKIN_DEPENDS 
     roscpp
     gazebo_ros
@@ -23,10 +23,10 @@ link_directories(${GAZEBO_LIBRARY_DIRS})
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
 
 add_library(
-  gazebo_differential_plugin 
+  leo_gazebo_differential_plugin 
   src/differential_plugin.cpp
 )
-target_link_libraries(gazebo_differential_plugin ${GAZEBO_LIBRARIES})
+target_link_libraries(leo_gazebo_differential_plugin ${GAZEBO_LIBRARIES})
 
 foreach(dir launch config models worlds)
   install(
@@ -41,6 +41,6 @@ catkin_install_python(
 )
 
 install(
-  TARGETS gazebo_differential_plugin
+  TARGETS leo_gazebo_differential_plugin
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 )
