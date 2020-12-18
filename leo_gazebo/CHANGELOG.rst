@@ -2,8 +2,8 @@
 Changelog for package leo_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.0 (2020-12-18)
+------------------
 * Specify minimum version for leo_description dependency
 * Abandon usage of tf_prefix parameter since it is deprecated
 * Use new URDF from the leo_description package
