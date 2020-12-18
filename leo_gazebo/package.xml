@@ -31,7 +31,7 @@
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>nav_msgs</exec_depend>
 
-  <exec_depend>leo_description</exec_depend>
+  <exec_depend version_gte="1.2.0">leo_description</exec_depend>
 
   <export>
     <gazebo_ros gazebo_model_path="${prefix}/models"/>
