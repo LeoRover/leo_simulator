@@ -7,7 +7,7 @@
   <arg name="P" default="0.0"/>
   <arg name="Y" default="0.0"/>
 
-  <arg name="model" default="$(find leo_description)/urdf/leo_gazebo.urdf.xacro"/>
+  <arg name="model" default="$(find leo_description)/urdf/leo_sim.urdf.xacro"/>
   
   <arg name="fixed" default="false"/>
   <arg name="robot_ns" default="/"/>
