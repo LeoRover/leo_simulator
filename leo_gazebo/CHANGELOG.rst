@@ -2,6 +2,14 @@
 Changelog for package leo_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Specify minimum version for leo_description dependency
+* Abandon usage of tf_prefix parameter since it is deprecated
+* Use new URDF from the leo_description package
+* Pass all args from main launch file
+* Change gazebo_differential_plugin to leo_gazebo_differential_plugin
+
 0.1.3 (2020-12-05)
 ------------------
 * Use gazebo_dev dependency instead of gazebo (fix building on debian)
