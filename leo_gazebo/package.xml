@@ -6,8 +6,8 @@
     Launch files and other resources for simulating Leo Rover in Gazebo.
   </description>
 
-  <maintainer email="blazej@turtlerover.com">Błażej Sowa</maintainer>
-  <author email="blazej@turtlerover.com">Błażej Sowa</author>
+  <maintainer email="support@fictionlab.pl">Fictionlab</maintainer>
+  <author email="blazej@fictionlab.pl">Błażej Sowa</author>
 
   <license>MIT</license>
 
