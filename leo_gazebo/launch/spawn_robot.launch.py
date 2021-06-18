@@ -37,7 +37,12 @@ def generate_launch_description():
                 parameters=[
                     {
                         "robot_description": Command(
-                            ["xacro ", LaunchConfiguration("model")]
+                            [
+                                "xacro ",
+                                LaunchConfiguration("model"),
+                                " fixed:=",
+                                LaunchConfiguration("fixed"),
+                            ]
                         )
                     }
                 ],
@@ -58,6 +63,12 @@ def generate_launch_description():
                 package="controller_manager",
                 executable="spawner.py",
                 arguments=["joint_state_broadcaster"],
+            ),
+            Node(
+                name="diff_drive_controller_spawner",
+                package="controller_manager",
+                executable="spawner.py",
+                arguments=["diff_drive_controller"],
             ),
         ]
     )
