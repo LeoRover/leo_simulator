@@ -53,5 +53,11 @@ def generate_launch_description():
                 ],
                 # fmt: on
             ),
+            Node(
+                name="joint_state_broadcaster_spawner",
+                package="controller_manager",
+                executable="spawner.py",
+                arguments=["joint_state_broadcaster"],
+            ),
         ]
     )
