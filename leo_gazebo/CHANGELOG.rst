@@ -2,6 +2,17 @@
 Changelog for package leo_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix catkin_lint warnings/errors
+* Set starting position for marsyard2021 world
+* Reformat launch files
+* relay odometry to wheel_odom_with_covariance topic
+* Remove odom_relay script
+* Update diff_drive_controller parameters
+* Split the leo_gazebo package into multiple packages
+* Update author and maintainer info
+
 0.2.0 (2020-12-18)
 ------------------
 * Specify minimum version for leo_description dependency

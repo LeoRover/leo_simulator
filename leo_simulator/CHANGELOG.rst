@@ -2,6 +2,11 @@
 Changelog for package leo_simulator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add new packages to metapackage dependencies
+* Update author and maintainer info
+
 0.2.0 (2020-12-18)
 ------------------
 
