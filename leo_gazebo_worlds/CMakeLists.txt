@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(leo_gazebo)
+project(leo_gazebo_worlds)
 
 find_package(catkin REQUIRED)
 
@@ -7,12 +7,7 @@ catkin_package()
 
 install(
   DIRECTORY
-    config
-    launch
+    models
+    worlds
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
-
-catkin_install_python(
-  PROGRAMS scripts/odom_relay
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
