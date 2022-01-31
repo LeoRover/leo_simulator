@@ -7,24 +7,28 @@ controllers:
   diff_drive:
     type: "diff_drive_controller/DiffDriveController"
 
+    # Joint names
     left_wheel: ['wheel_RL_joint', 'wheel_FL_joint']
     right_wheel: ['wheel_RR_joint', 'wheel_FR_joint']
 
-    wheel_separation: 0.33
+    # Odometry
+    publish_rate: 20
+    open_loop_: false
     wheel_separation_multiplier: 1.91
-    wheel_radius: 0.0625
-
-    pose_covariance_diagonal: [0.001, 0.001, 0.0, 0.0, 0.0, 0.03]
+    velocity_rolling_window_size: 10
+    pose_covariance_diagonal: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     twist_covariance_diagonal: [0.0001, 0.0, 0.0, 0.0, 0.0, 0.001]
 
-    base_frame_id: "base_link"
-    odom_frame_id: "odom"
-    enable_odom_tf: false
-    publish_rate: 20
-
+    # Twist command
     cmd_vel_timeout: 0.5
     allow_multiple_cmd_vel_publishers: true
 
+    # TF
+    base_frame_id: "base_link"
+    odom_frame_id: "odom"
+    enable_odom_tf: false
+
+    # Limits
     linear/x:
       has_velocity_limits: true
       max_velocity: 0.4
@@ -36,3 +40,11 @@ controllers:
       max_velocity: 1.0
       has_acceleration_limits: true
       max_acceleration: 2.0
+
+    # Debug info
+    publish_cmd: false
+    publish_wheel_joint_controller_state: false
+
+    # Physical parameters
+    wheel_separation: 0.33
+    wheel_radius: 0.0625
