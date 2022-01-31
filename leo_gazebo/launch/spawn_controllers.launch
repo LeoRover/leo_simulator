@@ -1,29 +1,30 @@
 <launch>
 
-  <arg name="robot_ns" default="/"/>
+  <arg name="robot_ns" default="/" />
 
   <group ns="$(arg robot_ns)">
-    <rosparam command="load" file="$(find leo_gazebo)/config/controllers.yaml"/>
-    
-    <node name="controller_spawner" 
-          pkg="controller_manager"
-          type="spawner" args="
+    <rosparam command="load" file="$(find leo_gazebo)/config/controllers.yaml" />
+
+    <node name="controller_spawner"
+      pkg="controller_manager"
+      type="spawner" args="
       controllers/state
       controllers/diff_drive
-    "/>
+    " />
 
     <node name="robot_state_publisher"
-          pkg="robot_state_publisher"
-          type="robot_state_publisher"/>
+      pkg="robot_state_publisher"
+      type="robot_state_publisher" />
 
     <node name="cmd_vel_relay"
-          pkg="topic_tools"
-          type="relay"
-          args="cmd_vel controllers/diff_drive/cmd_vel"/>
+      pkg="topic_tools"
+      type="relay"
+      args="cmd_vel controllers/diff_drive/cmd_vel" />
 
     <node name="odom_relay"
-          pkg="leo_gazebo"
-          type="odom_relay"/>
+      pkg="topic_tools"
+      type="relay"
+      args="controllers/diff_drive/odom wheel_odom_with_covariance" />
 
   </group>
 
