@@ -3,6 +3,10 @@
   <include file="$(find leo_gazebo)/launch/leo_gazebo.launch"
     pass_all_args="true">
     <arg name="world_name" value="$(find leo_gazebo_worlds)/worlds/marsyard2021.world" />
+    <arg name="x" value="-1.11" />
+    <arg name="y" value="-14.86" />
+    <arg name="z" value="1.5" />
+    <arg name="Y" default="1.72" />
   </include>
 
 </launch>
