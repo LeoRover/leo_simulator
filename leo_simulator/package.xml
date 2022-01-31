@@ -18,6 +18,8 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <exec_depend>leo_gazebo</exec_depend>
+  <exec_depend>leo_gazebo_plugins</exec_depend>
+  <exec_depend>leo_gazebo_worlds</exec_depend>
 
   <export>
     <metapackage />
