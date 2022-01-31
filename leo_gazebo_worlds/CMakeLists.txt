@@ -7,6 +7,7 @@ catkin_package()
 
 install(
   DIRECTORY
+    media
     models
     worlds
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
