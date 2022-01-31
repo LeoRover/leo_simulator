@@ -2,8 +2,8 @@
 Changelog for package leo_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2022-01-31)
+------------------
 * Add marsyard2021 world
 * Split the leo_gazebo package into multiple packages
 

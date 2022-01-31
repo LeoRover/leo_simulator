@@ -2,8 +2,8 @@
 Changelog for package leo_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2022-01-31)
+------------------
 * Fix catkin_lint warnings/errors
 * Set starting position for marsyard2021 world
 * Reformat launch files
