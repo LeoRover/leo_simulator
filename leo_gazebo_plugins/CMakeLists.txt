@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0.2)
 project(leo_gazebo_plugins)
 
 # Set CMP0054
-# cmake_policy(SET CMP0054 NEW)
+cmake_policy(SET CMP0054 NEW)
 
 find_package(catkin REQUIRED 
   COMPONENTS
