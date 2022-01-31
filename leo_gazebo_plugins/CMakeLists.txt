@@ -6,27 +6,23 @@ cmake_policy(SET CMP0054 NEW)
 
 find_package(catkin REQUIRED 
   COMPONENTS
+    gazebo_dev
     roscpp
 )
-find_package(gazebo REQUIRED)
 
 catkin_package(
   LIBRARIES
     leo_gazebo_differential_plugin
-  CATKIN_DEPENDS 
-    roscpp
-    gazebo_ros
 )
 
-include_directories(${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE_DIRS})
-link_directories(${GAZEBO_LIBRARY_DIRS})
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
+include_directories(${catkin_INCLUDE_DIRS})
 
-add_library(
-  leo_gazebo_differential_plugin 
+add_library(leo_gazebo_differential_plugin 
   src/differential_plugin.cpp
 )
-target_link_libraries(leo_gazebo_differential_plugin ${GAZEBO_LIBRARIES})
+target_link_libraries(leo_gazebo_differential_plugin
+  ${catkin_LIBRARIES}
+)
 
 install(
   TARGETS leo_gazebo_differential_plugin
