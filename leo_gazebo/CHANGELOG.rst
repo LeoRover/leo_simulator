@@ -2,8 +2,8 @@
 Changelog for package leo_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.0 (2022-10-10)
+------------------
 * Add launch file for marsyard2022 world
 * Contributors: Błażej Sowa
 

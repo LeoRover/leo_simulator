@@ -2,8 +2,8 @@
 Changelog for package leo_gazebo_plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.0 (2022-10-10)
+------------------
 * Add gazebo_ros to dependencies to prevent ROS buildfarm from building this package for unsupported platforms
 * Contributors: Błażej Sowa
 

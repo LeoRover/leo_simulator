@@ -2,8 +2,8 @@
 Changelog for package leo_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.0 (2022-10-10)
+------------------
 * Add marsyard2022 world
 * Change marsyard2020_terrain model name
 * Contributors: Błażej Sowa
