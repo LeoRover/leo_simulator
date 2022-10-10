@@ -1,0 +1,11 @@
+<launch>
+
+  <include file="$(find leo_gazebo)/launch/leo_gazebo.launch"
+    pass_all_args="true">
+    <arg name="world_name" value="$(find leo_gazebo_worlds)/worlds/marsyard2022.world" />
+    <arg name="x" value="-17.003807" />
+    <arg name="y" value="7.617856" />
+    <arg name="z" value="1.5" />
+  </include>
+
+</launch>
