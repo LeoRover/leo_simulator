@@ -3,6 +3,7 @@
   <arg name="fixed" default="false"/>
   <arg name="robot_ns" default="/"/>
   <arg name="model_name" default="leo"/>
+  <arg name="mecanum_wheels" default="false"/>
 
   <arg name="world_name" default="worlds/empty.world"/>
   <arg name="paused" default="false"/>

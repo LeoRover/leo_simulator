@@ -6,6 +6,7 @@
   <arg name="R" default="0.0" />
   <arg name="P" default="0.0" />
   <arg name="Y" default="0.0" />
+  <arg name="mecanum_wheels" default="false" />
 
   <arg name="model" default="$(find leo_description)/urdf/leo_sim.urdf.xacro" />
 
@@ -18,6 +19,7 @@
     <param name="robot_description" command="xacro $(arg model) 
       fixed:=$(arg fixed)
       robot_ns:='$(arg robot_ns)'
+      mecanum_wheels:=$(arg mecanum_wheels)
     " />
 
     <rosparam command="load" file="$(find leo_gazebo)/config/pid_gains.yaml" />

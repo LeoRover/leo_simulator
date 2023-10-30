@@ -3,6 +3,7 @@
   <arg name="fixed" default="false" />
   <arg name="robot_ns" default="/" />
   <arg name="model_name" default="leo" />
+  <arg name="mecanum_wheels" default="false" />
 
   <include file="$(find leo_gazebo)/launch/spawn_model.launch"
     pass_all_args="true" />
